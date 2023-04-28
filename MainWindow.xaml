@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FF4A4A4A">
-        <DataGrid x:Name="MainGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="233,10,10,28"/>
-        <Button x:Name="b_DELETE" Content="DELETE" HorizontalAlignment="Left" Margin="10,236,0,0" VerticalAlignment="Top" Height="50" Width="218" Click="b_DELETE_Click"/>
-        <Button x:Name="b_ADD" Content="ADD" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.303,-0.9" Height="51" Width="218" Click="b_ADD_Click"/>
-        <Button x:Name="b_Update" Content="Update" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="54" Click="b_Update_Click" Width="218"/>
-        <Button x:Name="b_CLEAR" Content="ClearGrid" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top" Height="59" Width="218" Click="b_CLEAR_Click"/>
+        <DataGrid x:Name="MainGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,55,10,28"/>
+        <Button x:Name="b_DELETE" Content="DELETE" HorizontalAlignment="Left" Margin="289,5,0,0" VerticalAlignment="Top" Height="45" Width="100" Click="b_DELETE_Click"/>
+        <Button x:Name="b_ADD" Content="ADD" HorizontalAlignment="Left" Margin="98,5,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.303,-0.9" Height="45" Width="65" Click="b_ADD_Click"/>
+        <Button x:Name="b_Update" Content="Update" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Height="45" Click="b_Update_Click" Width="65"/>
+        <Button x:Name="b_CLEAR" Content="ClearGrid" HorizontalAlignment="Left" Margin="190,5,0,0" VerticalAlignment="Top" Height="45" Width="78" Click="b_CLEAR_Click"/>
+        <TextBox x:Name="TextLockFor"  HorizontalAlignment="Left" Margin="519,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" Height="32" TextChanged="TextBox_TextChanged"/>
 
     </Grid>
 </Window>

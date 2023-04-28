@@ -24,8 +24,9 @@ namespace Povtorenie1
         public MainWindow()
         {
             InitializeComponent();
-            _spisokDB = new SpisokDB();
             _spisokDB.InitializeDB();
+            _spisokDB = new SpisokDB();
+
             MainGrid.ItemsSource = _spisokDB.SpisokLIST.ToList();
         }
         private void UpdateDB()
@@ -69,6 +70,20 @@ namespace Povtorenie1
             //добавление нового элеменат в список черз конструктор
             _spisokDB.SpisokLIST.Add(new Spisok(" ",0," "));
             UpdateDB();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            /*
+            string x = TextLockFor.Text.ToString().ToLower();
+
+            List<Spisok> listSpisok = new List<Spisok>();
+            listSpisok = _spisokDB.SpisokLIST.ToList();
+            var spisok = _spisokDB.SpisokLIST.Where(l => 
+            l.Title.ToString().ToLower().Contains(x) 
+            || l.IdentityCod.ToString().ToLower().Contains(x)
+            || l.Comments.ToString().ToLower().Contains(x));
+            */
         }
     }
 }
